@@ -1,0 +1,14 @@
+1. Snooping: Unauthorized access to information.
+	    - using tools like sniffers and wiretappers. 
+	    - It breaks confidentiality
+
+2. Modification or Alteration: Altering data.
+	    - like Man-In-The-Middle Attack
+	    - It breaks confidentiality and Integrity. 
+
+3. Masquerading or Spoofing or Repudiation of origin: Mimics the identity.
+	    - By mimicking identity of someone attacker can generate and distribute attack.
+	    - It breaks Integrity 
+
+4. Delay and Denial of Service: Crash the server by flooding and consuming all resources.
+	    - It breaks Availability.

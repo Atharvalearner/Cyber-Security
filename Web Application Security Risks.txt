@@ -1,0 +1,15 @@
+Attack surface = all possible entry points attackers can interact with.
+eg. Login forms, Search bars, File uploads, APIs, Cookies, Headers, URL parameters, Admin panels
+
+Main Categories of Web Application Security Risks
+
+1. Injection : user input is treated as code/commands. eg. SQLi, LDAP, XPath Injection
+2. Authentication attacks: Login bypass/account theft
+3. Session attacks : Hijack user sessions
+4. Access control flaws: Access unauthorized data
+5. Client-side attacks: Attack browser/user
+6. Server-side attacks: Attack backend server
+7. Business logic flaws: Abuse application workflow
+8. Misconfiguration: Exploit weak settings
+9. Cryptographic flaws: Break encryption/security
+10. Availability attacks: Make app unavailable

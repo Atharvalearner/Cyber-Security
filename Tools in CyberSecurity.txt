@@ -1,0 +1,55 @@
+1. Splunk :
+	- A SIEM (Security Information and Event Management) tool used for log monitoring, analysis, and visualization.
+	- Helps to detect security incidents, monitor system performance, and troubleshoot issues by analyzing large amounts of machine data (logs).
+	- example: A company uses Splunk to detect suspicious login attempts by analyzing Windows Event Logs and firewall logs.
+	- SPL (Search Processing Language) :Splunk's query language used for searching, filtering, and transforming logs data within the Splunk platform. Commands are chained together with a pipe “|” character to indicate that the output of one command feeds into the next command on the right.
+	- Indexer : Splunk instance that indexes data. It transforms the raw data into events and stores the events into an index.
+	- Forwarders : A Splunk instance that forwards data to another Splunk instance is referred to as a forwarder.
+	- Key points to mention:
+		i) Collects & indexes logs from multiple sources.
+		ii) Provides dashboards, alerts, and reports.
+		iii) Widely used in SOC teams for threat detection.
+		iv) Allows you to Create and manage different kinds of datasets, data models, and table datasets.
+
+2. Wireshark :
+	- A network packet analyzer (open-source).
+	- Used to capture and analyze network traffic at a very detailed level (packets).
+	- Packet Dissection: The software "understands" the structure of different networking protocols and dissects the captured packets to display their fields and meanings. 
+	- example: If a website is loading slowly, Wireshark can analyze packet flow to check if there’s packet loss or unusual traffic (maybe a DDoS).
+	- Key points to mention:
+		i) Helps troubleshoot network issues.
+		ii) Can analyze protocols like TCP, HTTP, DNS, etc.
+		iii) Used in penetration testing & incident response.
+		iv) Optimizing network performance by analyzing traffic patterns and identifying bottlenecks. 
+	- Basic Commands : 
+		Filter by IP: ip.addr == 10.10.50.1, 
+		Filter by protocol : http, dns, ftp, ssh, etc
+		Filter by Port : tcp.port == 25
+		Filter by URL : http.host == "host name"
+		Filter by flag : tcp.flags.syn == 1
+		Filter by MAC address : eth.addr == mac address
+
+3. Nmap (Network Mapper) :
+	- A network scanning and reconnaissance tool.
+	- To discover devices, services, and open ports on a network.
+	- example: A security analyst scans their company’s IP range to check for unauthorized open ports that attackers could exploit.
+	- Key points to mention:
+		i) Can detect OS, services, and vulnerabilities (with scripts).
+		ii) Very popular in ethical hacking.
+		iii) Lightweight and command-line based.
+	- Basic Commands : 
+		nmap <target> 	  : scan host or IP
+		nmap <IP address range> : scan range of IP address : nmap <192.168.1.1-100>
+		nmap -sn <target> : Disables port scanning and only discovers active hosts. 
+		nmap -sV <target> : Detects service versions running on open ports.
+		nmap -O <target>  : Tries to detect the target's operating system.
+		nmap -A <target>  : Enables aggressive OS detection, version detection, script scanning, and traceroute.
+
+4. Cisco Packet Tracer :
+	- A network simulation tool 
+	- Developed by Cisco.
+	- Design, build, and test network topologies virtually without physical hardware.
+	- example: Students use Packet Tracer to simulate a LAN with routers, switches, and PCs to practice routing protocols like RIP or OSPF.
+	- Key points to mention:
+		i) Great for CCNA/CCNP preparation.
+		ii) Helps visualize packet flow between devices.

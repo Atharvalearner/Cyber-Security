@@ -1,0 +1,9 @@
+MITRE ATT&CK :
+	- framework (created by MITRE Corporation) used by security teams.
+	- Detect, analyze, and defend against threats by mapping attacker behavior to the framework.
+	- ATT&CK = Adversarial Tactics, Techniques, and Common Knowledge.
+	- Helps organizations understand how attackers operate by mapping behaviour to framework.
+	- Organized into tactics → techniques → procedures (TTPs):
+		i) Tactics = The goal of the attacker (e.g., Initial Access, Persistence).
+		ii) Techniques = How they achieve it (e.g., phishing, credential dumping).
+		iii) Procedures = Exact steps/tools used (e.g., phishing email with malicious Excel file).

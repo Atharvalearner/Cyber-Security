@@ -1,0 +1,30 @@
+Cyber Kill Chain (Attack Lifecycle) :
+	1. Reconnaissance: Gathering info : Attacker collects information about target people, systems, technologies, public infra.
+		Example: Hacker scans a company’s open ports.
+		Types: Active (Directly Scanning the target network/system), Passive (Get Info. from LinkedIn, company websites, etc)
+		Tools attackers commonly use: Nmap, Google dorking, LinkedIn, WHOIS, Shodan, Netcat.
+
+	2. Weaponization: Create exploit/malware (for a known vuln) with a delivery method.
+		Example: Building phishing email with malicious attachment.
+		Tools attackers commonly use: Metasploit Framework (payload creation; dual-use), Custom exploit code.
+
+	3. Delivery: Send exploit : attacker sends the weapon to the victim (email, drive-by, USB, supply-chain).
+		Example: Email sent to employee.
+		Tools attackers commonly use :
+			Phishing kits & SMTP bots, compromised mail servers, social engineering templates.
+			Malicious URLs hosted on compromised sites or shorteners.
+			Physical media with autorun payloads (less common now).
+
+	4. Exploitation: Malware executes : delivered payload takes advantage of a vulnerability to run code or steal credentials.
+		Example: Employee opens attachment → system infected.
+		Tools attackers commonly use : Metasploit, custom scripts, Hydra, Medusa.
+
+	5. Installation → Malware installs backdoor (so the attacker can come back): services, scheduled tasks, user accounts, backdoors, opens reverse shell to access victim remotely.
+		Example: Trojan silently runs in background.
+		Tools attackers commonly use : Dropper binaries, PowerShell scripts, Cobalt Strike stagers (commercial dual-use).
+
+	6. C2 (Command & Control) : Attacker communicates with infected machine.
+		Example: Hacker issues commands remotely.
+
+	7. Actions on Objective : Data theft, ransom, destruction.
+		Example: Exfiltrate financial records.

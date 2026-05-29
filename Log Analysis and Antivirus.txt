@@ -1,0 +1,23 @@
+Log Analysis :
+- Windows Event Viewer & Linux syslog
+	1. Windows Event Logs (Event Viewer) : Main logs - Application, System, Security, Setup, Forwarded Events.
+		Key Event IDs to know (SOC-focused): 4624 : Successful logon.
+						4625 : Failed logon.
+						4688 : Process creation.
+						4672 : Special privileges assigned to an account.
+						1102 : Audit log cleared (suspicious).
+						7045 : New service installed.
+
+	2. Linux logs (syslog, journald, auditd) :
+		/var/log/auth.log : authentication events, SSH.
+		/var/log/syslog or /var/log/messages : general system messages.
+		journalctl : systemd logs.
+		/var/log/audit/audit.log : syscall-level events.
+
+Antivirus : 
+A security software that detects, prevents, and removes malicious software (malware) such as viruses, worms, trojans, ransomware, spyware from a computer system.
+It works by:
+	i) Signature-based detection → compares files against a database of known malware.
+	ii) Heuristic/behavioral analysis → checks suspicious behavior even if malware is new.
+	iii) Real-time scanning → continuously monitors files and processes.
+	iv) Quarantine → isolates infected files so they don’t spread.

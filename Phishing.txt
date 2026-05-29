@@ -1,0 +1,12 @@
+- Tricking users into giving sensitive info (passwords, bank details, OTPs).
+- Types: 1. Email Phishing : Fake emails pretending to be from trusted companies.
+		Example: “Your bank account will be locked! Click here to update password.”
+
+	2. Spear Phishing : Targeted phishing → aimed at a specific person/org.
+		Example: CEO receives a fake invoice email crafted just for them.
+
+	3. Whaling : Spear phishing aimed at high-profile targets (CEOs, executives).
+		Example: Fake legal notice email sent to a CFO.
+
+	4. Smishing (SMS Phishing) : Fake text messages.
+	5. Vishing (Voice Phishing) : Fake phone calls pretending to be bank/tech support.

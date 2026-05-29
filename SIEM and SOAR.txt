@@ -1,0 +1,16 @@
+1. SIEM : Security Information & Event Management
+A SIEM collects, normalizes, stores, correlates and visualizes logs/events from across your environment so analysts can detect, investigate and report on security incidents.
+Popular Tools : Splunk, IBM QRadar, Elastic Stack (ELK/Elastic Security).
+Log collection → Normalization/Parsing → Correlation → Alerting & Dashboards -> Incident Response/Report Creation.
+Real-world use cases (examples)
+	i) Detect credential stuffing: correlate thousands of failed logins from many IPs against many user accounts → alert.
+	ii) Detect lateral movement: endpoint process creation (4688) + unusual SMB connections → escalate.
+	iii) Detect data exfiltration: large outbound transfers to unusual IPs + DNS tunneling patterns.
+
+2. SOAR : Security Orchestration, Automation and Response
+platform automates repetitive SOC workflows, orchestrates actions across security tools, and implements playbooks: it turns detection into action with less manual effort.
+Core components :
+	i) Orchestration: Connectors to SIEM, EDR, firewall, ticketing, DNS, cloud APIs.
+	ii) Automation: Scripts/playbooks to enrich alerts, run scans, block IPs, isolate endpoints.
+	iii) Case management: Tracks incidents, evidence, roles, timelines.
+	iv) Playbooks: If-then workflows (e.g., phishing playbook).

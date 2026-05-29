@@ -1,0 +1,13 @@
+Incident Response Lifecycle (IRL) :
+	1. Preparation : Building incident response plan, tools, backups, training.
+			Example: A bank trains its SOC analysts on detecting phishing emails.
+	2. Detection & Analysis : Identifying suspicious activity via SIEM, IDS, logs, alerts.
+			Example: Splunk alerts show unusual logins from Russia at 3 AM.
+	3. Containment : Stopping the spread without shutting everything down.
+			Example: Disconnecting a compromised laptop from the corporate Wi-Fi.
+	4. Eradication : Removing root cause (malware, backdoor, vulnerability).
+			Example: Wiping the infected laptop, applying patches.
+	5. Recovery : Restoring normal operations securely.
+			Example: Reconnecting cleaned laptop to the network, monitoring closely.
+	6. Lessons Learned : Documenting what happened and improving defenses.
+			Example: After phishing attack, company enforces 2FA and conducts awareness training.

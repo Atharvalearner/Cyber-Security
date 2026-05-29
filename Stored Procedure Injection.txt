@@ -1,0 +1,19 @@
+Injection in Stored Procedures :
+- type of SQL Injection vulnerability 
+- that occurs when user input is insecurely concatenated or dynamically executed inside a stored procedure.
+	- eg. SELECT * FROM users WHERE username = ''' + @username + '''
+
+- Stored procedures are database-side programs used for performance, code reuse, and centralized business logic.
+- Although they are intended to improve security, they can still become vulnerable if developers use dynamic SQL queries without proper parameterization.
+
+- Attacker manipulates user input to alter the intended SQL query logic.
+- potentially leading : authentication bypass
+			unauthorized data access
+			data modification
+			remote code execution.
+- prevented using : 
+	parameterized queries
+	avoiding dynamic SQL execution
+	proper input validation
+	least privilege database access
+	secure coding practices.

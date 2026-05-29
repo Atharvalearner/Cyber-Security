@@ -1,0 +1,7 @@
+1. Red: offensive security professionals. 
+	Experts at attacking systems and breaking into defense.
+	Perform Vulnerability Assessment and send report to blue team with some important point like PoC along with impact.
+2. Blue: Defensive security professionals.
+	Experts defending systems from attacks or attacks.
+	Fix and patch vulnerability which received from red team.
+3. Purple: Bridging/collaboration between Red and Blue team.
