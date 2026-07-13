@@ -1,0 +1,8 @@
+Use to Capture and analyse traffic of interfaces.
+It uses network interfaces internally to access them and perform analysis on them.
+To work Wireshark, It uses libraries: PCAP (Packet Capturing)
+In windows uses: winpcap or ncpa
+   Linux: libpcap
+   Wireless: Airpcap
+
+It having 3 sections: Packet List, Packet Details, Packet Bytes

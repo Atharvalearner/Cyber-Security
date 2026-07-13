@@ -1,22 +1,7 @@
 1. Cybersecurity: Protecting systems, networks, and data from attacks or unauthorized access.
    Goal: Keep data safe, accurate, and accessible only to the right people.
 
-2. CIA Triad (Confidentiality, Integrity, Availability) :
-	1. Confidentiality: Only authorized users should access data.
-		- Applies to content and existence.
-		- supported by access control mechanism: cryptography & stenography, file permissions, white and black list
-		- Enforcement relies on system services. eg. kernel
-		Example: ATM PIN → only you should know it.
-	2. Integrity: Data should remain accurate and unmodified.
-		- Trustworthiness of data or resources.
-		- Data and origin integrity
-		- Prevention and Detection mechanism use for unauthorized access.
-		- Correctness and trustworthiness verifies in Origin, transmission, storage
-		Example: If you transfer ₹1000 via UPI, it must not become ₹10,000 or ₹100.
-	3. Availability: Systems/data should be available when needed.
-		Example: Banking app must be up 24/7 → no DDoS downtime.
-
-3. Concepts :
+2. Concepts :
 	1. Threat: A potential danger that can exploit a vulnerability and cause harm to an organization’s assets (data, systems, networks).
 		 : Potential danger (Hacker, Malware, Natural disaster).
 	2. Vulnerability: A weakness or flaw in a system that can be exploited by a threat actor.
@@ -26,7 +11,7 @@
 		 : Probability that a threat exploits a vulnerability → causes damage.
 	5. Attack : Actions that cause violation of security.
 
-4. Types of Hackers: 
+3. Types of Hackers: 
 	1. White Hat (Ethical) : Help organizations secure systems.
 		Example: Bug bounty hunters finding flaws in Facebook.
 
