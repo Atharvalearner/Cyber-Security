@@ -1,3 +1,29 @@
+**# OWASP Top 10 (2021)**
+
+A01 - Broken Access Control
+
+A02 - Cryptographic Failures
+
+A03 - Injection
+
+A04 - Insecure Design
+
+A05 - Security Misconfiguration
+
+A06 - Vulnerable \& Outdated Components
+
+A07 - Identification \& Authentication Failures
+
+A08 - Software \& Data Integrity Failures
+
+A09 - Security Logging \& Monitoring Failures
+
+A10 - SSRF
+
+
+
+**# OWASP Top 10 (2025):**
+
 **1. Broken access control :**
 
 &#x09;- When user checks are missing, weak or only enforced on the client, attackers do things they shouldn't.
@@ -84,7 +110,7 @@
 
 
 
-**5. Injection :** 
+**5. Injection :**
 
 &#x09;- Allows untrusted user input to be sent to an interpreter (e.g. a browser, database, the command line) and causes the interpreter to execute parts of that input as commands without validation.
 
@@ -100,7 +126,7 @@
 
 &#x09;	- Anywhere strings are concatenated into the parser.
 
-&#x09;- Preventions: 
+&#x09;- Preventions:
 
 &#x09;	- Use parameterised queries / prepared statements.
 

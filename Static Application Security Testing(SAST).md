@@ -8,7 +8,7 @@
 * Analyzes source code or binaries without executing the application to find security vulnerabilities.
 * ***It Scans***: Code, Data flow, AST, Control flow
 * ***Used to Finds***: SQLi, XSS, Path traversal, Hardcoded secrets
-* ***SAST Scan tool:*** Sonar qube, Sengrap
+* ***SAST Scan tool:*** Sonar qube, Bandit, Sengrap
 
 
 

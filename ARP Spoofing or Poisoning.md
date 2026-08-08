@@ -1,4 +1,24 @@
-* A **Layer-2 Man-in-the-Middle attack** 
+ARP Spoofing / ARP Poisoning: is a Layer 2 Man-in-the-Middle (MITM) attack. It exploits the ARP protocol, which maps IP addresses to MAC addresses within a local network. Since ARP does not have any authentication mechanism, devices automatically trust ARP replies.
+
+
+
+In an ARP spoofing attack, the attacker sends forged ARP replies to the victim, claiming that the attacker's MAC address belongs to the default gateway. As a result, the victim updates its ARP cache with the fake mapping and starts sending its traffic to the attacker instead of the real router.
+
+
+
+For example, if the victim's IP is 192.168.1.10, the router's IP is 192.168.1.1, and the attacker is on the same LAN, the attacker falsely tells the victim that "192.168.1.1 is at my MAC address." The victim trusts this information, and all its traffic is redirected through the attacker's system. The attacker then forwards the traffic to the real router, so the communication continues normally while the attacker can monitor or manipulate the traffic.
+
+
+
+This can lead to packet sniffing, session hijacking, credential theft, DNS spoofing, or traffic modification. To prevent ARP spoofing, organizations use Dynamic ARP Inspection (DAI), static ARP entries for critical systems, VLAN segmentation, IDS/IPS monitoring, and encrypted protocols like HTTPS or VPNs so that intercepted traffic remains protected.
+
+
+
+
+
+**# ARP Spoofing / Poisoning:**
+
+* A **Layer-2 Man-in-the-Middle attack**
 * Attacker sends duplicate/forged ARP replies to associate their MAC address with another device’s IP address, usually the default gateway.
 
 
@@ -40,7 +60,7 @@ So all traffic passes through attacker.
 
 
 
-***# Working Steps***: 
+***# Working Steps***:
 
 1. **Victim Needs Router MAC**: Victim asks: Who has 192.168.1.1?
 
@@ -75,6 +95,4 @@ So all traffic passes through attacker.
 &#x09;- VPNs
 
 &#x09;- encrypted communication such as HTTPS.
-
-
 

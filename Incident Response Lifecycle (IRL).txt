@@ -1,4 +1,6 @@
-Incident Response Lifecycle (IRL) :
+A security incident is any event that threatens the confidentiality, integrity, or availability of an organization's systems or data. It may be caused by cyberattacks, malware, unauthorized access, or accidental human errors.
+
+# Incident Response Lifecycle (IRL) :
 	1. Preparation : Building incident response plan, tools, backups, training.
 			Example: A bank trains its SOC analysts on detecting phishing emails.
 	2. Detection & Analysis : Identifying suspicious activity via SIEM, IDS, logs, alerts.

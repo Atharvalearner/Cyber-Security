@@ -1,4 +1,30 @@
-**Cyber Kill Chain (Attack Lifecycle)** :
+The Cyber Kill Chain is a cybersecurity framework developed by Lockheed Martin that describes the seven stages of a cyberattack, from the attacker's initial reconnaissance to achieving their objective. It helps security teams understand how attacks progress so they can detect, stop, or disrupt them at different stages before significant damage occurs.
+
+
+
+The seven stages are:
+
+1. **Reconnaissance**: Gathering information about the target.
+
+**2. Weaponization:** Preparing the malicious payload or exploit.
+
+**3. Delivery**: Delivering the payload through methods like phishing emails or malicious websites.
+
+**4. Exploitation**: Exploiting a vulnerability to gain access.
+
+**5. Installation**: Installing malware or a backdoor on the target.
+
+**6. Command and Control (C2)**: Establishing communication with the compromised system.
+
+**7. Actions on Objectives**: Performing the attacker's goal, such as stealing data, encrypting files, or moving laterally within the network.
+
+
+
+
+
+
+
+**# Cyber Kill Chain (Attack Lifecycle)** :
 
 &#x09;***1. Reconnaissance***: Gathering info : Attacker collects information about target people, systems, technologies, public infra.
 
@@ -57,18 +83,4 @@
 &#x09;***7. Actions on Objective*** : Data theft, ransom, destruction.
 
 &#x09;	Example: Exfiltrate financial records.
-
-
-
-
-
-Summary:
-
-1. Scanning
-2. Creating payload
-3. deliver payload to victim
-4. executing payload at victim
-5. creating/installation backdoor
-6. control victim using command 
-7. achieve objective 
 

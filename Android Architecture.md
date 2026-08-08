@@ -48,10 +48,7 @@ an open-source, Linux-based mobile operating system developed by Google for smar
 
 **# Device Drivers:**
 
-* A specialized software program that acts as a translator between your computer's operating system (like Windows or macOS) and its hardware devices
-
-Device Drivers
-
+* A specialized software program that acts as a translator between your computer's operating system (like Windows or macOS) and its hardware Device Drivers
 * Examples: Display, Camera, USB, Wi-Fi, Audio driver
 
 
@@ -83,8 +80,4 @@ Device Drivers
 *↓*
 
 *Camera Hardware*
-
-
-
-
 

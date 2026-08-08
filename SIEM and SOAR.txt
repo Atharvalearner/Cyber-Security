@@ -1,3 +1,15 @@
+SIEM stands for Security Information and Event Management. It is a security platform that collects, normalizes, stores, and correlates logs from multiple sources such as servers, firewalls, applications, endpoints, and network devices. By analyzing these logs in real time, SIEM helps security teams detect suspicious activities, investigate incidents, and generate alerts and reports. Popular SIEM solutions include Splunk, IBM QRadar, and Elastic Security. For example, a SIEM can detect a brute-force attack by correlating multiple failed login attempts across different systems and generating an alert for the SOC team.
+
+SOAR stands for Security Orchestration, Automation, and Response. It helps automate repetitive security tasks and orchestrates actions across multiple security tools using predefined playbooks. Instead of analysts manually responding to every alert, SOAR can automatically enrich alerts, block malicious IP addresses, isolate infected endpoints, create incident tickets, and collect forensic evidence. This reduces response time and allows SOC analysts to focus on more complex investigations.
+
+# Easy Way to Remember:
+Logs
+ ↓
+SIEM (Collect → Correlate → Detect → Alert)
+ ↓
+SOAR (Enrich → Automate → Respond → Close Incident)
+
+
 1. SIEM : Security Information & Event Management
 A SIEM collects, normalizes, stores, correlates and visualizes logs/events from across your environment so analysts can detect, investigate and report on security incidents.
 Popular Tools : Splunk, IBM QRadar, Elastic Stack (ELK/Elastic Security).

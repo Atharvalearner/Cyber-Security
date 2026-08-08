@@ -1,3 +1,9 @@
+File Inclusion is a web application vulnerability where an attacker manipulates user-controlled input to make the application load unintended files. There are two types: Local File Inclusion (LFI), which accesses files on the local server, and Remote File Inclusion (RFI), which loads files from an external server. The impact includes information disclosure and possible code execution. It can be prevented by validating user input, whitelisting allowed files, disabling remote file inclusion, and following secure coding practices.
+
+
+
+
+
 **File Inclusion :**
 
 * An application loads or includes files dynamically using user-controlled input without proper validation.
@@ -52,63 +58,15 @@ Input validation, whitelisting allowed files, disabling remote file inclusion, p
 
 
 
-**# Practical :**
+| Local File Inclusion (LFI)                         | Remote File Inclusion (RFI)                             |
 
-1\. LFI:
+| -------------------------------------------------- | ------------------------------------------------------- |
 
-* if target web server is reside on Linux Apache Platform
-* DocumentRoot: ls /var/www/html/
-* index.php trump.jpeg
+| Includes files from the local server               | Includes files from an external server                  |
 
-\- server path will be /var/www/html/trump.jpeg
+| Used to access local configuration or system files | May allow execution of attacker-controlled code         |
 
-\- target.com/index.php?file=trump.jpeg
-
-Example: any.com/index.php?file=../../../etc/passwd
-
-
-
-Here is an example code of how a page could include PHP code, from a different file, inside the file that uses the include statement:
-
-
-
-index.php:
-
-
-
-``````````
-
-<?php
-
-$file = $\\\\\\\\\\\\\\\_GET\\\\\\\\\\\\\\\['lang'];
-
-include('/var/www/html/' . $file)
-
-?>
-
-
-
-
-
-http://localhost:8080/index.php?lang=en.php
-
-
-
-The attack:
-
-application is detecting  in the lang parameter: $file=str\\\\\\\\\\\\\\\_replace('../','',$\\\\\\\\\\\\\\\_GET\\\\\\\\\\\\\\\['lang']);
-
-\\\&#x09;					$file=str\\\\\\\\\\\\\\\_replace('./','',$file);
-
-
-
-
-
-> URL Encoding of : ../../etc/passwd --> %2e%2e%2f%2e%2e%2fetc%2fpasswd
-
-
-
-
+| Limited to files present on the server             | Requires the application to allow remote file inclusion |
 
 
 

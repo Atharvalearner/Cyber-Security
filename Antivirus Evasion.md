@@ -16,6 +16,8 @@ It refers to techniques used by malware authors to avoid detection by security s
 
 **G. Environment Checking:**
 
+
+
 The malware checks:
 
 Am I inside a VM?
